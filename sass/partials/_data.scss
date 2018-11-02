@@ -84,3 +84,17 @@
     margin-bottom: 2rem;
   }
 }
+@media (max-width: 320px) {
+  .data {
+    padding: 1rem;
+    height: 65vh;
+  }
+  .header {
+    &__title {
+      font-size: 2rem;
+    }
+    &__subtitle {
+      font-size: 1.6rem;
+    }
+  }
+}
