@@ -14,18 +14,7 @@
     object-fit: cover;
   }
 }
-.clip-path-fallback {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -32px;
-  z-index: 1;
-  height: 100%;
-  width: 20%;
-  transform: skewX(-8deg);
-  background: url('../images/bg-blue.jpg') no-repeat;
-  // background: red;
-}
+
 @media (max-width: 1024px) {
   .foto__img {
     width: 90%;
