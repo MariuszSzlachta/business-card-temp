@@ -1006,7 +1006,7 @@ body {
 
 @media (max-width: 480px) {
   body {
-    height: 100vh;
+    min-height: 100vh;
   }
   .wrapper {
     border: none;
@@ -1382,7 +1382,7 @@ body {
     -ms-flex-align: center;
         align-items: center;
     padding: 2rem;
-    height: 60vh;
+    min-height: 60vh;
   }
   .header {
     margin-bottom: 2rem;
@@ -1392,7 +1392,7 @@ body {
 @media (max-width: 320px) {
   .data {
     padding: 1rem;
-    height: 65vh;
+    min-height: 65vh;
   }
   .header__title {
     font-size: 2rem;
@@ -1500,9 +1500,6 @@ body {
 }
 
 @media (max-width: 320px) {
-  .foto {
-    height: 35vh;
-  }
   .foto::after {
     display: none;
   }
