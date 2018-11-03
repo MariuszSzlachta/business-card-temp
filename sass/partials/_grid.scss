@@ -9,7 +9,7 @@
 }
 
 .container {
-  width:100%;
+  width: calc(100% - 16px);
   max-width: 1200px;
 }
 
@@ -180,7 +180,7 @@
 
 @media only screen and (max-width: 992px) {
   .container {
-    width: 100%;
+    width: calc(100% - 16px);
   }
 
   .col-md,
@@ -338,7 +338,7 @@
 
 @media only screen and (max-width: 768px) {
   .container {
-    width: 100%;
+    width: calc(100% - 16px);
   }
 
   .col-sm,
