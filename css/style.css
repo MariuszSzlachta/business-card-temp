@@ -1004,7 +1004,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
   body {
     min-height: 100vh;
   }
