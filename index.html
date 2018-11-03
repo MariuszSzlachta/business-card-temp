@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Tomasz Rarok - personal website">
+  <meta name="keywords" content="Tomasz Rarok Java Developer, android, android developer, javascript developer, web developer, backend developer">
+  <meta name="author" content="Mariusz Szlachta - http://mariuszszlachta.github.io">
+  <meta name="description" content="Business card website of web developer, java developer, android develeper - Tomasz Rarok. ">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -14,20 +18,20 @@
 </head>
 
 <body>
-  <div class="container centerY">
-    <main class="wrapper">
+  <div class="container">
+    <main class="wrapper wow border">
       <div class="row">
         <div class="col-lg-6 col-xs-12 data">
           <!-- header -->
           <header class="header">
             <img class="header__image" src="images/qrcard.png" alt="qr-code">
-            <div class="header__hgroup">
+            <div class="header__hgroup wow animation from-right m-from-bottom">
               <h1 class="header__title"><span class="header__title--highlight">Tomasz</span> Rarok</h1>
               <p class="header__subtitle">Web developer</p>
             </div>
           </header>
           <!-- address -->
-          <address class="address">
+          <address class="address wow animation from-right m-from-bottom">
             <a href="tel:+491741017720" class="address__link">
               <span class="fas fa-phone address__icon"></span>
               <span class="address__text">
@@ -51,55 +55,53 @@
               </span>
             </a>
 
-            <a href="https://www.xing.com/profile/Tomasz_Rarok" class="address__link">
+            <a href="https://www.xing.com/profile/Tomasz_Rarok" target="_blank" rel="noopener" class="address__link">
               <span class="fab fa-xing address__icon"></span>
               <span class="address__text">xing</span>
             </a>
 
-            <a href="https://www.linkedin.com/in/tomaszrarok" class="address__link">
+            <a href="https://www.linkedin.com/in/tomaszrarok" target="_blank" rel="noopener" class="address__link">
               <span class="fab fa-linkedin-in address__icon"></span>
               <span class="address__text">linkedIn</span>
             </a>
           </address>
           <!-- skills -->
-          <ul class="skills-list">
-            <li class="skills-list__item" aria-label="list-toggler">
-              <span class="skills-list__icon fas fa-toolbox"></span>
+          <ul class="skills-list wow animation from-bottom m-from-bottom">
+            <li class="skills-list__item">
+              <span aria-label="tech icon php" class="skills-list__icon devicon-php-plain"></span>
             </li>
             <li class="skills-list__item">
-              <span aria-label="tech icon" class="skills-list__icon devicon-php-plain"></span>
+              <span aria-label="tech icon msql" class="skills-list__icon devicon-mysql-plain"></span>
             </li>
             <li class="skills-list__item">
-              <span aria-label="tech icon" class="skills-list__icon devicon-mysql-plain"></span>
+              <span aria-label="tech icon zend" class="skills-list__icon devicon-zend-plain"></span>
             </li>
             <li class="skills-list__item">
-              <span aria-label="tech icon" class="skills-list__icon devicon-zend-plain"></span>
+              <span aria-label="tech icon symfony" class="skills-list__icon devicon-symfony-original"></span>
             </li>
             <li class="skills-list__item">
-              <span aria-label="tech icon" class="skills-list__icon devicon-symfony-original"></span>
+              <span aria-label="tech icon jquery" class="skills-list__icon devicon-jquery-plain"></span>
             </li>
             <li class="skills-list__item">
-              <span aria-label="tech icon" class="skills-list__icon devicon-jquery-plain"></span>
+              <span aria-label="tech icon android" class="skills-list__icon devicon-android-plain"></span>
             </li>
             <li class="skills-list__item">
-              <span aria-label="tech icon" class="skills-list__icon devicon-android-plain"></span>
-            </li>
-            <li class="skills-list__item">
-              <span aria-label="tech icon" class="skills-list__icon devicon-java-plain"></span>
+              <span aria-label="tech icon java" class="skills-list__icon devicon-java-plain"></span>
             </li>
           </ul>
         </div>
         <div class="col-lg-6 col-xs-12 foto">
-          <!-- <div class="foto__container"> -->
-            <picture class="foto__picture">
-              <source media="(max-width: 480px)" srcset="images/tomek-transparent.png">
-              <img class="foto__img" src="images/tomek-transparent.png" alt="sudoku project miniature">
-            </picture>
-          <!-- </div> -->
+          <div id="clipped" class="clip-path-fallback" aria-hidden="true">
+          </div>
+          <picture class="foto__picture">
+            <source media="(max-width: 480px)" srcset="images/tomek-transparent.png">
+            <img class="foto__img wow animation from-right--big m-scale" src="images/tomek-transparent.png" alt="sudoku project miniature">
+          </picture>
         </div>
       </div>
     </main>
   </div>
+  <script src="vendor/wow.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

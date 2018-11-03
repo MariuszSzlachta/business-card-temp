@@ -3,6 +3,7 @@
   background: url('../images/bg-blue.jpg') no-repeat;
   background-size: cover;
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+  overflow: hidden;
   &__img {
     position: absolute;
     bottom: 0;
@@ -13,7 +14,18 @@
     object-fit: cover;
   }
 }
-
+.clip-path-fallback {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -32px;
+  z-index: 1;
+  height: 100%;
+  width: 20%;
+  transform: skewX(-8deg);
+  background: url('../images/bg-blue.jpg') no-repeat;
+  // background: red;
+}
 @media (max-width: 1024px) {
   .foto__img {
     width: 90%;
@@ -32,7 +44,7 @@
 }
 @media (max-width: 480px) {
   .foto {
-    position: static;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,6 +54,16 @@
     clip-path: none;
     overflow: hidden;
     background: transparent;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10%;
+      height: 4px;
+      background-color: $blue;
+    }
     &__picture {
       display: flex;
       justify-content: center;
@@ -61,5 +83,8 @@
 @media (max-width: 320px) {
   .foto {
     height: 35vh;
+    &::after {
+      display: none;
+    }
   }
 }

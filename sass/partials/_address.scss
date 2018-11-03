@@ -10,10 +10,14 @@
     &:hover .address__text {
       color: $blue;
     }
+    &:hover .address__icon {
+      transform: scale(1.2);
+    }
   }
   &__icon {
     color: $blue;
     margin-right: 1.5rem;
+    transition: transform 0.3s ease-in-out;
     &--hidden {
       visibility: hidden;
     }
@@ -27,7 +31,7 @@
 
 @media (max-width: 992px) {
   .address {
-    margin-top: 3rem;
+    margin-top: 2rem;
     &__link {
       font-size: 1.8rem;
     }
@@ -35,9 +39,16 @@
 }
 @media (max-width: 768px) {
   .address {
-    margin-top: 2rem;
     &__link {
       font-size: 1.6rem;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .address {
+    margin-top: 1.5rem;
+    &__link {
+      font-size: 1.4rem;
     }
   }
 }
