@@ -57,6 +57,7 @@
     position: absolute;
     top: -6px;
     left: -6px;
+    z-index: -1;
     width: 0;
     height: 0;
     border: 6px solid $blue;
