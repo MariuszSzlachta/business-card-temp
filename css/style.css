@@ -1408,7 +1408,7 @@ body {
   }
 }
 
-.foto {
+.photo {
   position: relative;
   background: url("../images/bg-blue.jpg") no-repeat;
   background-size: cover;
@@ -1417,7 +1417,7 @@ body {
   overflow: hidden;
 }
 
-.foto__img {
+.photo__img {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1429,25 +1429,25 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .foto__img {
+  .photo__img {
     width: 90%;
   }
 }
 
 @media (max-width: 992px) {
-  .foto__img {
+  .photo__img {
     width: 95%;
   }
 }
 
 @media (max-width: 640px) {
-  .foto__img {
+  .photo__img {
     width: 105%;
   }
 }
 
 @media (max-width: 480px) {
-  .foto {
+  .photo {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -1463,7 +1463,7 @@ body {
     overflow: hidden;
     background: transparent;
   }
-  .foto::after {
+  .photo::after {
     content: '';
     position: absolute;
     bottom: 15px;
@@ -1473,7 +1473,7 @@ body {
     height: 4px;
     background-color: #0072bc;
   }
-  .foto__picture {
+  .photo__picture {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -1481,7 +1481,7 @@ body {
     -ms-flex-align: center;
         align-items: center;
   }
-  .foto__img {
+  .photo__img {
     background: url("../images/bg-blue.jpg") no-repeat;
     position: static;
     width: 50%;
@@ -1493,8 +1493,18 @@ body {
   }
 }
 
+@media (max-width: 480px) and (orientation: landscape) {
+  .photo {
+    margin-top: 36rem;
+    height: auto;
+  }
+  .photo::after {
+    display: none;
+  }
+}
+
 @media (max-width: 320px) {
-  .foto::after {
+  .photo::after {
     display: none;
   }
 }
