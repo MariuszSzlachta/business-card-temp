@@ -1346,6 +1346,7 @@ body {
 .header__image {
   width: 100px;
   height: 100px;
+  border: 6px solid #0072bc;
   -o-object-fit: cover;
      object-fit: cover;
 }
