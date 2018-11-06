@@ -22,13 +22,13 @@
 }
 @media (max-width: 992px) {
   .photo__img {
-    width: 95%;
+    width: 80%;
   }
 }
 
 @media (max-width: 640px) {
   .photo__img {
-    width: 105%;
+    width: 95%;
   }
 }
 
@@ -72,7 +72,7 @@
 }
 @media (max-width: 480px) and (orientation: landscape) {
   .photo {
-    margin-top: 36rem;
+    margin-top: 3rem;
     height: auto;
     &::after {
       display: none;

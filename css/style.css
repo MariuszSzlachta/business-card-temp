@@ -989,6 +989,10 @@ body {
 }
 
 @media (max-width: 992px) and (orientation: landscape) {
+  body {
+    min-height: 100vh;
+    height: auto;
+  }
   .container {
     width: 100%;
   }
@@ -1436,13 +1440,13 @@ body {
 
 @media (max-width: 992px) {
   .photo__img {
-    width: 95%;
+    width: 80%;
   }
 }
 
 @media (max-width: 640px) {
   .photo__img {
-    width: 105%;
+    width: 95%;
   }
 }
 
@@ -1495,7 +1499,7 @@ body {
 
 @media (max-width: 480px) and (orientation: landscape) {
   .photo {
-    margin-top: 36rem;
+    margin-top: 3rem;
     height: auto;
   }
   .photo::after {
